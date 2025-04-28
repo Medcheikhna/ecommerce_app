@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:ecommerce_proj/controller/binding/intialbindings.dart';
 import 'package:ecommerce_proj/core/services/services.dart';
 import 'package:flutter/material.dart';
 
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
       locale: controller.language,
       debugShowCheckedModeBanner: false,
       theme: controller.appTheme,
+      initialBinding: initialBindings(),
       title: 'Material App',
       // home: const Languages(),
       getPages: routes,
